@@ -9,25 +9,27 @@ const testRideObject = {
   number:'4695768978',
   miles:14,
   total:8
-}
+};
 function App() {
   return (
-    <div className="App">
-     <rideRequest/>
+    <div >
+     <RideRequest rideObject={testRideObject}/>
     </div>
   );
 }
 
-function rideRequest(rideObject) {
+function RideRequest({rideObject}) {
+
+  const { name, from, to, number, miles, total } = rideObject;
   return (
     <div>
       <ul>
-        <li>{rideObject.name}</li>
-        <li>{rideObject.fromAddress}</li>
-        <li>{rideObject.toAddress}</li>
-        <li>{rideObject.number}</li>
-        <li>{rideObject.miles}</li>
-        <li>{rideObject.total}</li>
+        <li>{name}</li>
+        <li>{from}</li>
+        <li>{to}</li>
+        <li>{number}</li>
+        <li>{miles}</li>
+        <li>{total}</li>
       </ul>
     </div>
   );
