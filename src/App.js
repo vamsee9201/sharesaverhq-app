@@ -8,7 +8,6 @@ const testRideObject = {
   to: '1011 eagle glen dr',
   number:'4695768978',
   miles:14,
-  total:8
 };
 function App() {
   return (
@@ -20,7 +19,8 @@ function App() {
 
 function RideRequest({rideObject}) {
 
-  const { name, from, to, number, miles, total } = rideObject;
+  const { name, from, to, number, miles} = rideObject;
+ 
   return (
     <div>
       <ul>
@@ -29,7 +29,7 @@ function RideRequest({rideObject}) {
         <li>{to}</li>
         <li>{number}</li>
         <li>{miles}</li>
-        <li>{total}</li>
+        <li>{miles}$</li>
       </ul>
     </div>
   );
