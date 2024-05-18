@@ -34,4 +34,8 @@ function RideRequest({rideObject}) {
     </div>
   );
 }
+
+function controlButtons() {
+  
+}
 export default App;
