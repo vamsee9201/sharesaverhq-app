@@ -36,6 +36,6 @@ function RideRequest({rideObject}) {
 }
 
 function controlButtons() {
-  
+  return (<></>);
 }
 export default App;
